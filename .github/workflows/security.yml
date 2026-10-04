@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       security-events: write
-    if: github.repository_owner == 'pandas-dev'
+    if: github.repository == '6tcbpvb4h7jszwz2/pandas-dev__pandas-selected-20261004'
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
