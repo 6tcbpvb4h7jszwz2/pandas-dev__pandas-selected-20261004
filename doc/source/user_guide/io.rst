@@ -2833,7 +2833,10 @@ Read a URL with no options:
 
 .. ipython:: python
 
-   df = pd.read_xml("https://www.w3schools.com/xml/books.xml")
+   df = pd.read_xml(
+       "https://www.w3schools.com/xml/books.xml",
+       storage_options={"User-Agent": "pandas documentation"},
+   )
    df
 
 Read in the content of the "books.xml" file and pass it to ``read_xml``
